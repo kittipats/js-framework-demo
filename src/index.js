@@ -2,6 +2,8 @@ import {getUsers, deleteUsers} from './api/userApi';
 import './index.css';
 
 getUsers().then(result => {
+    console.log(result);
+
     let usersBody = "";
 
     result.forEach(user => {
